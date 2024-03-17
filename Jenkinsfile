@@ -26,7 +26,7 @@ pipeline {
       steps{
           sh 'docker stop tp5devops | true'
           sh 'docker rm tp5devops | true'
-          sh 'docker run --name tp5devops -d -p 8080:8181 ${DOCKER_IMAGE}'
+          sh 'docker run --name tp5devops -d -p 8181:8181 ${DOCKER_IMAGE}'
       }
     }
   }
